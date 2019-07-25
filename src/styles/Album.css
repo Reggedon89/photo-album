@@ -1,0 +1,74 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#albumHeader {
+    display: flex;
+    width: 100%;
+    background: red;
+    justify-content: center;
+    margin: auto;
+    height: 150px;
+}
+
+#albumList {
+    display: flex;
+    background: blue;
+    width: 10em;
+    height: 30em;
+}
+
+#albumList ul {
+    list-style: none;
+}
+
+#albumList li {
+    margin-bottom: 10px;
+}
+
+#albumArea {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: green;
+    justify-content: space-around;
+}
+
+.indieAlbum {
+    height: 16rem;
+    width: 15rem;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.albumWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.albumTitle {
+    display: flex;
+    position: relative;
+    top: 12.9rem;
+    height: 3rem;
+    width: 100%;
+    border: 1px solid black;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
