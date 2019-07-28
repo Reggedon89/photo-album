@@ -16,13 +16,8 @@ class Album extends React.Component {
   };
 
   componentDidMount() {
-    const id = this.props.match.params.id;
-    axios.get(`/api/${id}?_embed=photos`).then(resp => {
-      this.setState({
-        albumName: resp.data.name,
-        photos: resp.data.photos
-      });
-    });
+    this.fetchPhotos();
+
     axios.get("/api/albums").then(resp => {
       this.setState({
         albums: resp.data
@@ -30,16 +25,20 @@ class Album extends React.Component {
     });
   }
 
-  componentWillReceiveProps(newprops) {
-    const id = newprops.match.params.id;
-
+  componentDidUpdate(prevProps) {
+    if (this.props.match.params.id !== prevProps.match.params.id) {
+      this.fetchPhotos();
+    }
+  }
+  fetchPhotos = () => {
+    const id = this.props.match.params.id;
     axios.get(`/api/albums/${id}?_embed=photos`).then(resp => {
       this.setState({
         albumName: resp.data.name,
         photos: resp.data.photos
       });
     });
-  }
+  };
 
   render() {
     return (
