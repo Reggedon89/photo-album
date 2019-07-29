@@ -7,3 +7,31 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.photo img {
+    max-width: 300px;
+
+}

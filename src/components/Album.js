@@ -1,22 +1,25 @@
-import React from "react";
-import "../styles/Album.css";
+import React, { Component } from "react";
 import axios from "axios";
-import App from "./App";
-import Solo from "./IndiPic";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import MaterialIcon, { colorPalette } from "material-icons-react";
-import "normalize.css/normalize.css";
-import { AST_Infinity } from "terser";
+import { Link } from "react-router-dom";
+import MaterialIcon from "material-icons-react";
+import "../styles/Album.css";
 
-class Album extends React.Component {
+class Album extends Component {
   state = {
-    albums: [],
-    photos: [],
-    albumName: ""
+    albumName: "",
+    images: [],
+    albums: []
   };
 
   componentDidMount() {
-    this.fetchPhotos();
+    axios
+      .get("/api/albums/" + this.props.match.params.id + "?_embed=photos")
+      .then(resp => {
+        this.setState({
+          albumName: resp.data.name,
+          images: resp.data.photos
+        });
+      });
 
     axios.get("/api/albums").then(resp => {
       this.setState({
@@ -25,20 +28,16 @@ class Album extends React.Component {
     });
   }
 
-  componentDidUpdate(prevProps) {
-    if (this.props.match.params.id !== prevProps.match.params.id) {
-      this.fetchPhotos();
-    }
-  }
-  fetchPhotos = () => {
-    const id = this.props.match.params.id;
-    axios.get(`/api/albums/${id}?_embed=photos`).then(resp => {
-      this.setState({
-        albumName: resp.data.name,
-        photos: resp.data.photos
+  componentWillReceiveProps(newProps) {
+    axios
+      .get("/api/albums/" + newProps.match.params.id + "?_embed=photos")
+      .then(resp => {
+        this.setState({
+          albumName: resp.data.name,
+          images: resp.data.photos
+        });
       });
-    });
-  };
+  }
 
   render() {
     return (
@@ -51,36 +50,28 @@ class Album extends React.Component {
           </Link>
           <h1>{this.state.albumName}</h1>
         </header>
-
-        <main id="albumArea">
-          {/* <section> */}
-          <aside>
+        <div className="albumWrapper">
+          <aside id="albumList">
             <ul>
               {this.state.albums.map(album => (
-                <Link key={"/album/" + album.id} to={"/ablum/"}>
-                  <li>{album.name}</li>
-                </Link>
+                <li>
+                  <Link to={"/album/" + album.id}>{album.name}</Link>
+                </li>
               ))}
             </ul>
           </aside>
-          {/* </section> */}
-          {/* <section className="rows"> */}
-          {this.state.photos.map(photo => (
-            <Link to="/photo">
-              <div className="picture">
-                <div>
-                  <img src={photo.photo} alt="pic" />
-                </div>
-                <div>
-                  <p>{photo.name}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
-          {/* </section> */}
-        </main>
+          <div className="photoList">
+            {this.state.images.map(photo => (
+              <Link className="photoLink" to={"/IndiPic/" + photo.id}>
+                <img src={photo.url} />
+                <h3>{photo.name}</h3>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
 }
+
 export default Album;

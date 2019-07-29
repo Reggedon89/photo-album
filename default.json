@@ -1,5 +1,6 @@
 {
-  "albums": [{
+  "albums": [
+    {
       "id": 1,
       "name": "Superman",
       "url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/superman-logo-digital-artwork-georgeta-blanaru.jpg"
@@ -30,183 +31,219 @@
       "url": "https://i.pinimg.com/originals/0d/f2/e3/0df2e3e94d985e7bbfd8deabe33e4d89.jpg"
     }
   ],
-  "photos": [{
-
+  "photos": [
+    {
+      "id": 1,
       "albumId": 1,
       "name": "SuperMan",
       "url": "https://i.pinimg.com/736x/0f/10/a9/0f10a9e608c1661969b793c9cf9ff1ba.jpg"
     },
     {
+      "id": 2,
       "albumId": 1,
       "name": "Superman",
       "url": "https://cdn2us.denofgeek.com/sites/denofgeekus/files/styles/main_wide/public/2019/05/doomsday-clock-10-watchmen-dr-manhattan-superman-dc-universe.jpg?itok=l95rPFCa"
     },
     {
+      "id": 3,
       "albumId": 1,
       "name": "Superman",
       "url": "https://nerdist.com/wp-content/uploads/2019/03/Shazam-fighting-Superman-1200x676.jpg"
     },
     {
+      "id": 4,
       "albumId": 1,
       "name": "Superman",
       "url": "https://cdn.vox-cdn.com/thumbor/LrMEXHmV5Dk30m_bdwItecihOis=/0x0:2660x1737/1200x675/filters:focal(1960x352:2384x776)/cdn.vox-cdn.com/uploads/chorus_image/image/59923539/IMG_0297.0.jpg"
     },
     {
+      "id": 5,
       "albumId": 1,
       "name": "Superman",
       "url": "https://pbs.twimg.com/profile_images/1080658072773816326/C212ZBsx_400x400.jpg"
     },
     {
+      "id": 6,
       "albumId": 1,
       "name": "Superman",
       "url": "https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/366144/Previews/1330222e9a6df3b80d8c21ecffc0c600._SX1280_QL80_TTD_.jpg"
     },
     {
+      "id": 7,
       "albumId": 2,
       "name": "Batman",
       "url": "https://img.cinemablend.com/filter:scale/quill/4/2/e/d/a/f/42edaf21128e476311f99931a8feb7a16af594c5.jpg?mw=600"
     },
     {
+      "id": 8,
       "albumId": 2,
       "name": "Batman",
       "url": "https://imgix-media.wbdndc.net/cms/filer_public/f6/92/f6923d2d-8778-46b8-a1cf-493bb2a574af/batman-mcfarland.jpg"
     },
     {
+      "id": 9,
       "albumId": 2,
       "name": "Batman",
       "url": "https://www.dccomics.com/sites/default/files/styles/comics320x485/public/Char_Thumb_Batman_20190116_5c3fc4b40fae42.85141247.jpg?itok=_Or1JrO2"
     },
     {
+      "id": 10,
       "albumId": 2,
       "name": "Batman",
       "url": "https://cdn2us.denofgeek.com/sites/denofgeekus/files/2019/07/batman-beyond-blu-ray.jpeg"
     },
     {
+      "id": 11,
       "albumId": 2,
       "name": "Batman",
       "url": "https://wegotthiscovered.com/wp-content/uploads/2019/01/batman_arkham_knight_bruce_wayne_armor_hologram_107565_1920x1200-e1539981861611.jpg"
     },
     {
+      "id": 12,
       "albumId": 2,
       "name": "Batman",
       "url": "https://3.bp.blogspot.com/--CMm9GMxw8A/XHEAQ0Ys0SI/AAAAAAAAA50/6SqGgpialF4IdZGMocBfiI-4T4rW5y3FQCLcBGAs/s1600/btmn.jpeg"
     },
     {
+      "id": 13,
       "albumId": 3,
       "name": "Martian Man Hunter",
       "url": "https://vignette.wikia.nocookie.net/earth279527/images/9/9d/Martian_Manhunter.jpg/revision/latest?cb=20170530044547"
     },
     {
+      "id": 14,
       "albumId": 3,
       "name": "Martian Man Hunter",
       "url": "https://am22.akamaized.net/tms/cnt/uploads/2018/06/Martian-Manhunter-Superpowers-Heat-Vision-e1528317494126.jpg"
     },
     {
+      "id": 15,
       "albumId": 3,
       "name": "Martian Man Hunter",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv7RTw9OtB013iUgg3_qw-O38j82W5Q2mDCtHQ0dVRvA-ZP28xrw"
     },
     {
+      "id": 16,
       "albumId": 3,
       "name": "Martian Man Hunter",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrzUoU2gge4ruD5Lo3kIw4nNv0MkCFWCo6l_C9e4BzodeFU48l"
     },
     {
+      "id": 17,
       "albumId": 3,
       "name": "Martian Man Hunter",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu7PuknZ28uTW9zs0DjsWddSnDnbD3GOm3IaikZ4Uf5lY8sjaF"
     },
     {
+      "id": 18,
       "albumId": 3,
       "name": "Martian Man Hunter",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh0miPAIequgbILMdeWe6XLN6JVi3gGB280rw-IswMooYfwUoPsA"
     },
     {
+      "id": 19,
       "albumId": 4,
       "name": "Iron Man",
       "url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Iron_Man_bleeding_edge.jpg/250px-Iron_Man_bleeding_edge.jpg"
     },
     {
+      "id": 20,
       "albumId": 4,
       "name": "Iron Man",
       "url": "https://specialoperations.com/wp-content/uploads/2019/02/iron-man.jpg"
     },
     {
+      "id": 21,
       "albumId": 4,
       "name": "Iron Man",
       "url": "https://i.ebayimg.com/images/g/vXAAAOSwqxdb2-Xk/s-l300.jpg"
     },
     {
+      "id": 22,
       "albumId": 4,
       "name": "Iron Man",
       "url": "https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/ironman-spiderman-homecoming-poster-frontpage-700x354.jpg"
     },
     {
+      "id": 23,
       "albumId": 4,
       "name": "Iron Man",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP0m01E5RuyzuJs3EQ4zT71KLLNpCobkn6uw08218nqvtt_vwD"
     },
     {
+      "id": 24,
       "albumId": 4,
       "name": "Iron Man",
       "url": "https://cdn.i-scmp.com/sites/default/files/styles/768x768/public/d8/images/methode/2019/06/12/2094a6b6-8cc6-11e9-b2aa-5ba392ab87ab_image_hires_162019.jpg?itok=pHdGWTRu&v=1560327624"
     },
     {
+      "id": 25,
       "albumId": 5,
       "name": "SpiderMan",
       "url": "https://cdn.vox-cdn.com/thumbor/yvewlXndhBYW1xl690fF9HclFHg=/0x0:1800x2651/1200x800/filters:focal(738x1398:1026x1686)/cdn.vox-cdn.com/uploads/chorus_image/image/60074609/SGEDDON2018000cov.0.jpg"
     },
     {
+      "id": 26,
       "albumId": 5,
       "name": "SpiderMan",
       "url": "http://www.adventuresinpoortaste.com/wp-content/uploads/2019/03/spiderman-city-at-war-1-1.jpg"
     },
     {
+      "id": 27,
       "albumId": 5,
       "name": "SpiderMan",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBzGePamxCqVh0tmWSP_9yVyq6B38Fa2DPj1x8SrDPDoQ_phT6"
     },
     {
+      "id": 28,
       "albumId": 5,
       "name": "SpiderMan",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlu4ICr4GV3tBq0Xa3_F5JImPsgHv4n687BIAzR26FkS3Mm46f"
     },
     {
+      "id": 29,
       "albumId": 5,
       "name": "SpiderMan",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTMI6CEMTSOTgz2QyuapNH_2YitpBSzUui17i_dOJfwJv1XZZI"
     },
     {
+      "id": 30,
       "albumId": 5,
       "name": "SpiderMan",
       "url": "https://is5-ssl.mzstatic.com/image/thumb/Video118/v4/3a/da/d9/3adad999-6ed0-de80-6b7e-8fccca15f42e/source/560x315mv.jpg"
     },
     {
+      "id": 31,
       "albumId": 6,
       "name": "Thor",
       "url": "https://images-na.ssl-images-amazon.com/images/I/61zocSBXtvL._SY679_.jpg"
     },
     {
+      "id": 32,
       "albumId": 6,
       "name": "Thor",
       "url": "https://www.sideshow.com/storage/product-images/500569U/thor-shattered_marvel_gallery_5c4e12b898d2e.jpg"
     },
     {
+      "id": 33,
       "albumId": 6,
       "name": "Thor",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoCiR350dI-ZPoML_mRXylFy6LND2g9z7T2DGcfTVAFtaoFP2"
     },
     {
+      "id": 34,
       "albumId": 6,
       "name": "Thor",
       "url": "https://static.comicvine.com/uploads/original/7/72524/2871351-thor_oliver_coipel.jpg"
     },
     {
+      "id": 35,
       "albumId": 6,
       "name": "Thor",
       "url": "https://i.ytimg.com/vi/Hbcu-zxwaRQ/maxresdefault.jpg"
     },
     {
+      "id": 36,
       "albumId": 6,
       "name": "Thor",
       "url": "https://i.frg.im/PjhwapPb/mvatb20137_600.jpg?v=1533378116.507"

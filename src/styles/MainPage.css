@@ -16,32 +16,19 @@ html {
 #mainHeader {
     display: flex;
     width: 100%;
-    background: red;
+    background: lightgrey;
     justify-content: center;
     margin: auto;
     height: 150px;
 }
 
-#albumList {
-    display: flex;
-    background: blue;
-    width: 10em;
-    height: 30em;
-}
 
-#albumList ul {
-    list-style: none;
-}
-
-#albumList li {
-    margin-bottom: 10px;
-}
 
 #albumArea {
     display: flex;
     width: 100%;
     height: 100%;
-    background: green;
+    background: white;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -49,18 +36,19 @@ html {
 .indieAlbum {
     height: 16rem;
     width: 15rem;
-    border: 1px solid black;
     margin: 50px;
 }
 
 .indieAlbum img {
     height: 16rem;
+    border-radius: 55px;
+
     width: 15rem;
 }
 
 .albumWrapper {
     display: flex;
-    /* flex-direction: column; */
+
 }
 
 .albumTitle {
@@ -69,6 +57,8 @@ html {
     height: 3rem;
     width: 100%;
     border: 1px solid black;
+    border-radius: 15px;
+
     align-items: center;
     align-self: flex-end;
     background: yellow;

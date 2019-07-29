@@ -1,16 +1,16 @@
-import React from "react";
+import React, { Component } from "react";
 import "../styles/MainPage.css";
-import Album from "./Album";
-import Axios from "axios";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-class Main extends React.Component {
+import axios from "axios";
+import { Link } from "react-router-dom";
+
+class Main extends Component {
   state = {
     albums: []
   };
 
   componentDidMount() {
-    Axios.get("/api/albums").then(resp => {
+    axios.get("/api/albums").then(resp => {
       this.setState({
         albums: resp.data
       });
@@ -25,7 +25,7 @@ class Main extends React.Component {
 
         <main id="albumArea">
           {this.state.albums.map(album => (
-            <Link key={"album-link-" + album.id} to="/album/">
+            <Link to={"/album/" + album.id}>
               <div className="albumWrapper">
                 <div className="indieAlbum">
                   <img src={album.url} />
