@@ -15,8 +15,9 @@ html {
 
 #albumArrow {
     position: relative;
-    right: 550px;
+    left: 100px;
     top: 100px;
+    font-weight: bolder;
 
 }
 
